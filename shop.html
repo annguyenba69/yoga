@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/reset.css">
+    <link rel="stylesheet" href="public/css/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/animate.css">
+    <link rel="stylesheet" href="public/font/css/all.css">
+    <link rel="stylesheet" href="public/style.css">
+    <script src="public/js/jquery.min.js"></script>
+    <script src="public/js/popper.min.2018.js"></script>
+    <script src="public/css/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <script src="public/js/jquery.easing.js"></script>
+    <script src="public/js/gsap.js"></script>
+    <script src="public/main.js"></script>
+    <title>Diet Shop</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <div id="top-bar-left" class="d-flex">
+                        <div class="logo">
+                            <img src="public/images/logo-3.png" alt="">
+                        </div>
+                        <nav>
+                            <ul class="main-menu d-flex">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li><a href="community.html">Community</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div id="top-bar-right" class="d-flex justify-content-end">
+                        <i class="far fa-user"></i>
+                        <i class="far fa-heart heart"> <span class="count">0</span></i>
+                        <i class="fas fa-shopping-cart cart"> <span class="count">0</span></i>
+                        <span class="money">$0.00</span>
+                        <i class="fas fa-search"></i>
+                        <i class="fas fa-bars nav-toggle"></i>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <ul class="responsive-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
+    <div id="background-shop">
+        <div class="container-fluid p-0">
+            <div class="row">
+                <div class="col-md-12">
+                    <img class="w-100" src="public/images/bg-page.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Background -->
+    <div id="wp-content-shop">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div id="side-bar-left">
+                        <ul class="main-menu">
+                            <li><a href="">Time</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Morning</a></li>
+                                    <li><a href="">Afternoon</a></li>
+                                </ul>
+                                <i class="fas fa-angle-down angle"></i>
+                            </li>
+                            <li><a href="">Type</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">1 vs 1</a></li>
+                                    <li><a href="">Class</a></li>
+                                </ul>
+                                <i class="fas fa-angle-down angle"></i>
+                            </li>
+                            <li><a href="">Teacher</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Indian</a></li>
+                                    <li><a href="">Vietnamese</a></li>
+                                    <li><a href="">English</a></li>
+                                </ul>
+                                <i class="fas fa-angle-down angle"></i>
+                            </li>
+                            <li><a href="">Free Class</a></li>
+                        </ul>
+                        <div class="filter">
+                            <h5>Filter by attributes</h5>
+                            <p class="ammount">Price</p>
+                            <div class="filter-detail">
+                                <a href="" data-toggle="tooltip"  title="$80"  data-placement="top"><span>$80</span></a>
+                                <a href=""  data-toggle="tooltip"  title="$90"  data-placement="top"><span>$90</span></a>
+                                <a href=""  data-toggle="tooltip"  title="$100"  data-placement="top"><span>$100</span></a>
+                                <a href=""  data-toggle="tooltip"  title="$110"  data-placement="top"><span>$110</span></a>
+                                <a href=""  data-toggle="tooltip"  title="$120"  data-placement="top"><span>$120</span></a>
+                            </div>
+                            <p class="meal-type">Class type</p>
+                            <div class="filter-detail">
+                                <a href="" data-toggle="tooltip"  title="Relax"  data-placement="top"><span>Relax</span></a>
+                                <a href=""  data-toggle="tooltip"  title="Healthy"  data-placement="top"><span>Healthy</span></a>
+                                <a href=""  data-toggle="tooltip"  title="Lose Weight"  data-placement="top"><span>Lose Weight</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div id="list-product">
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <p class="showing">Showing all 9 results</p>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <form action="">
+                                    <select name="" id="sort">
+                                        <option value="menu_order" selected="selected">Default sorting</option>
+                                        <option value="popularity">Sort by popularity</option>
+                                        <option value="rating">Sort by average rating</option>
+                                        <option value="date">Sort by latest</option>
+                                        <option value="price">Sort by price: low to high</option>
+                                        <option value="price-desc">Sort by price: high to low</option>
+                                    </select>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href=""><img class="img-fluid" src="public/images/class-5.jpg" alt=""></a>
+                                        <p class="discount">-13%</p>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <h4>Lớp Thiền Định</h4>
+                                        </a>
+                                        <p class="product-price">$100/Month</p>
+                                        <p>Our Yoga Collection is made from Certified Organic Cotton, ensuing strict social and
+                                            environmental standards</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href=""><img class="img-fluid" src="public/images/class-1.jpg" alt=""></a>
+                                        <p class="discount">-30%</p>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <h4>Lớp Thư Giãn</h4>
+                                        </a>
+                                        <p class="product-price">$110/Month</p>
+                                        <p>Our Yoga Collection is made from Certified Organic Cotton, ensuing strict social and
+                                            environmental standards</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href=""><img class="img-fluid" src="public/images/class-2.jpg" alt=""></a>
+                                        <p class="discount">-29%</p>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <h4>Lớp Hít Thở</h4>
+                                        </a>
+                                        <p class="product-price">$90/Month</p>
+                                        <p>Our Yoga Collection is made from Certified Organic Cotton, ensuing strict social and
+                                            environmental standards</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href=""><img class="img-fluid" src="public/images/class-3.jpg" alt=""></a>
+                                        <p class="discount">-13%</p>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <h4>Lớp Cho Bà Bầu</h4>
+                                        </a>
+                                        <p class="product-price">$95/Month</p>
+                                        <p>Our Yoga Collection is made from Certified Organic Cotton, ensuing strict social and
+                                            environmental standards</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href=""><img class="img-fluid" src="public/images/class-4.jpg" alt=""></a>
+                                        <p class="discount">-30%</p>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <h4>Lớp Thể Dục</h4>
+                                        </a>
+                                        <p class="product-price">$105/Month</p>
+                                        <p>Our Yoga Collection is made from Certified Organic Cotton, ensuing strict social and
+                                            environmental standards</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href=""><img class="img-fluid" src="public/images/class-6.jpg" alt=""></a>
+                                        <p class="discount">-29%</p>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <h4>Lớp Người Cao Tuổi</h4>
+                                        </a>
+                                        <p class="product-price">$120/Month</p>
+                                        <p>Our Yoga Collection is made from Certified Organic Cotton, ensuing strict social and
+                                            environmental standards</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 more-product">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href=""><img class="img-fluid" src="public/images/class-7.jpg" alt=""></a>
+                                        <p class="discount">-23%</p>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <h4>Lớp Cho Bé</h4>
+                                        </a>
+                                        <p class="product-price">$110/Month</p>
+                                        <p>Our Yoga Collection is made from Certified Organic Cotton, ensuing strict social and
+                                            environmental standards</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 more-product">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href=""><img class="img-fluid" src="https://vbpchinese.com/wp-content/uploads/2021/04/hoc-thu-mien-phi.png" alt=""></a>
+                                        <p class="discount">Free</p>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <h4>Lớp Học Thử</h4>
+                                        </a>
+                                        <p class="product-price">Free</p>
+                                        <p>Our Yoga Collection is made from Certified Organic Cotton, ensuing strict social and
+                                            environmental standards</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 text-center mb-3">
+                                <button class="btn button-more">More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="box-left">
+                        <h4 class="footer-title">Contact with us</h4>
+                        <p>Nullam viverra consectetuer quisque cursus et, porttitor risus.</p>
+                        <div class="box-left-link">
+                            <a href="">+61 (0) 3 8376 6284</a>
+                            <a href="">noreply@envato.com</a>
+                        </div>
+                        <h4 class="footer-title">Localization</h4>
+                        <div class="box-left-location">
+                            <p>Envato</p>
+                            <p>Level 13, 2 Elizabeth</p>
+                            <p>Victoria 3000</p>
+                            <p>Australia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box-center">
+                        <h4 class="footer-title">Useful links</h4>
+                        <a href="">Contact us</a>
+                        <a href="">Help & About us</a>
+                        <a href="">Shipping & Returns</a>
+                        <a href="">Refund Policy</a>
+                        <a href="">Press Room</a>
+                        <a href="">Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="box-right">
+                        <h4 class="footer-title">BE informed with our newsletter</h4>
+                        <input type="text" name="email" id="footer-input">
+                        <button>Subscribe</button>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                        <span>We accept:</span> <img src="public/images/pay.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
